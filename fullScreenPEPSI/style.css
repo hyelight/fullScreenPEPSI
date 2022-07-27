@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.screen {
+  background: linear-gradient(#a3a910, #131313, #a3a910);
+  width: 100vw;
+  height: 100vh;
+}
+.contents {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  width: 100%;
+}
+.contents h1 {
+  font-family: Dosis;
+  font-size: 80px;
+  margin-bottom: 10px;
+  text-shadow: 3px 3px 0 #a3a910, -1px -1px 0 #827082, 1px -1px 0 #3690db;
+}
+.contents p {
+  font-weight: bold;
+  font-family: "Lexend", sans-serif;
+  font-size: 35px;
+  margin-bottom: 15px;
+}
+.contents a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  border: 2px solid white;
+  border-radius: 25px;
+  padding: 4px 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 25px;
+}
+.contents a:hover {
+  background-color: #131313;
+  color: #a3a910;
+  font-weight: bold;
+}
+@media (max-width: 650px) {
+  .screen {
+    background: linear-gradient(#131313, #a3a910, #131313);
+  }
+
+  .contents h1 {
+    font-size: 70px;
+    color: #131313;
+    text-shadow: 3px 3px 0 white, -1px -1px 0 #888087, 1px -1px 0 #888087,
+      -1px 1px 0 #888087, 1px 1px 0 #888087;
+  }
+  .contents p {
+    font-size: 30px;
+    color: #131313;
+  }
+  .contents a {
+    font-size: 20px;
+    color: #131313;
+    border: 2px solid darkkhaki;
+  }
+}
